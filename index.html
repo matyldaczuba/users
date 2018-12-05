@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box mt-5">
+        <div>
+            <p class="h1"><i class="far fa-smile-wink mr-5 sm-5 xm-5"></i>Name your group ;)</p>
+            <div class="form-group float-right">
+                <input class="search form-control col-xs-12" type="text" placeholder="Search">
+                <span class="counter float-right"></span>
+            </div>
+        </div>
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr class="table-active table-sm">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Leane Graham</td>
+                    <td>Bret</td>
+                    <td>Sincere@april.biz</td>
+                    <td>
+                        <a href="#">Edit</a>
+                        i
+                        <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Erwin Howell</td>
+                    <td>Antonette</td>
+                    <td>Shanna@malisa.tv</td>
+                    <td>
+                        <a href="#">Edit</a>
+                        i
+                        <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Clementine Bauch</td>
+                    <td>Samantha</td>
+                    <td>Nathan@yesenia.net</td>
+                    <td>
+                        <a href="#">Edit</a>
+                        i
+                        <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Patricia Lebsack</td>
+                    <td>Karianne</td>
+                    <td>Julianne.OConner@lory.org</td>
+                    <td>
+                        <a href="#">Edit</a>
+                        i
+                        <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Chelsey Dietrich</td>
+                    <td>Karmen</td>
+                    <td>Lucio_Hettinger@annie.ca</td>
+                    <td>
+                        <a href="#">Edit</a>
+                        i
+                        <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-secondary box-shadow--8dp">Add New User</button>
+    </div>
+    <div class="modal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-light">
+                <div class="modal-header p-0">
+                    <h5 class=" ml-1 modal-title">Delete Confirmation</h5>
+                </div>
+                <div class="modal-body mt-3">
+                    <p class="text-center">Are you sure? Do you want to delete the User?</p>
+                </div>
+                <div class="modal-form">
+                    <div class="container">
+                        <div class="row mb-4">
+                            <div class="col-md-6 col-sm-6 col1 center-block">
+                                <button type="button" class="btnWidth btn btn-primary center-block ml-5 box-shadow--8dp btn-block">Delete</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col1 center-block">
+                                <button type="button" class="btnWidth btn btn-secondary center-block ml-5 box-shadow--8dp btn-block"
+                                    data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content bg-light">
+                <div class="modal-header p-0">
+                    <h5 class="ml-1 modal-title">Edit User</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row col-md-12">
+                        <div class="form-group form-row row col-md-6">
+                            <label class="col-md-4 col-form-label text-right pr-3">
+                                Name:
+                            </label>
+                            <input type="text" class="form-control col-md-8" placeholder="Roman Polanski" required>
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                        <div class="form-group form-row row col-md-6">
+                            <label class="col-md-4 col-form-label text-right pr-3">
+                                Username:
+                            </label>
+                            <input type="text" class="form-control col-md-8" placeholder="romek" required>
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                        <div class="form-group form-row row col-md-6">
+                            <label class="col-md-4 col-form-label text-right pr-3">
+                                Email:
+                            </label>
+                            <input type="email" class="form-control col-md-8" placeholder="roman@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="wordOnBorder bg-light">Address</div>
+                    <div class="border border-secondary border-3">
+                        <div class="row col-md-12 mt-1">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Street:
+                                </label>
+                                <input type="text" class="form-control col-md-8" placeholder="Polna" required>
+                            </div>
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Suite(No):
+                                </label>
+                                <input type="text" class="form-control col-md-8" placeholder="Apt. 108" required>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Zip code:
+                                </label>
+                                <input type="text" class="form-control col-md-8 bg-danger" placeholder="" required>
+                            </div>
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    City:
+                                </label>
+                                <input type="text" class="form-control col-md-8" placeholder="New York" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-md-12 mt-1">
+                        <div class="form-group form-row row col-md-6">
+                            <label class="col-md-4 col-form-label text-right pr-3">
+                                Phone:
+                            </label>
+                            <input type="text" class="form-control col-md-8" placeholder="108 108 108" required>
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                        <div class="form-group form-row row col-md-6">
+                            <label class="col-md-4 col-form-label text-right pr-3">
+                                Website:
+                            </label>
+                            <input type="text" class="form-control col-md-8" placeholder="romanpolanski.com" required>
+                        </div>
+                    </div>
+                    <div class="wordOnBorder bg-light">Company</div>
+                    <div class="border border-secondary border-3">
+                        <div class="row col-md-12 mt-1">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Name:
+                                </label>
+                                <input type="text" class="form-control col-md-8" placeholder="Polanski TV" required>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group form-row row col-md-12 ">
+                                <label class="col-md-2 col-form-label text-right pr-3">
+                                    Catch phrase:
+                                </label>
+                                <input type="text" class="form-control col-md-10 lastLabel" placeholder="Catch me if you can ;)"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group form-row row col-md-12">
+                                <label class="col-md-2 col-form-label text-right pr-3">
+                                    BS (tags):
+                                </label>
+                                <input type="text" class="form-control col-md-10 lastLabel" placeholder="movie production directory film"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mt-3 text-danger">* Enter Valid ZIP code</p>
+                    </div>
+                    <div class="modal-form">
+                        <div class="container">
+                            <div class="row mb-4 mt-5">
+                                <div class="col-md-6 col-sm-6 col-xs-6 col1 center-block">
+                                    <button type="button" class="btnWidth btn btn-primary center-block ml-5 box-shadow--8dp">Add
+                                        New User</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 col1 center-block">
+                                    <button type="button" class="btnWidth btn btn-secondary center-block ml-5 box-shadow--8dp"
+                                        data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="modal" tabindex="1" role="dialog">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content bg-light">
+                    <div class="modal-header p-0">
+                        <h5 class="ml-1 modal-title">Add New User</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row col-md-12">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    ID:
+                                </label>
+                                <p class="form-control-plaintext col-md-8">1</p>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Name:
+                                </label>
+                                <input type="text" class="form-control col-md-8 bg-danger" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Username:
+                                </label>
+                                <input type="text" class="form-control col-md-8" placeholder="romek" required>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Email:
+                                </label>
+                                <input type="email" class="form-control col-md-8" placeholder="roman@gmail.com"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="wordOnBorder bg-light">Address</div>
+                        <div class="border border-secondary border-3">
+                            <div class="row col-md-12 mt-1">
+                                <div class="form-group form-row row col-md-6">
+                                    <label class="col-md-4 col-form-label text-right pr-3">
+                                        Street:
+                                    </label>
+                                    <input type="text" class="form-control col-md-8" placeholder="Polna" required>
+                                </div>
+                                <div class="form-group form-row row col-md-6">
+                                    <label class="col-md-4 col-form-label text-right pr-3">
+                                        Suite(No):
+                                    </label>
+                                    <input type="text" class="form-control col-md-8" placeholder="Apt. 108" required>
+                                </div>
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="form-group form-row row col-md-6">
+                                    <label class="col-md-4 col-form-label text-right pr-3">
+                                        Zip code:
+                                    </label>
+                                    <input type="text" class="form-control col-md-8 bg-danger" placeholder="" required>
+                                </div>
+                                <div class="form-group form-row row col-md-6">
+                                    <label class="col-md-4 col-form-label text-right pr-3">
+                                        City:
+                                    </label>
+                                    <input type="text" class="form-control col-md-8" placeholder="New York" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12 mt-1">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Phone:
+                                </label>
+                                <input type="text" class="form-control col-md-8" placeholder="108 108 108" required>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group form-row row col-md-6">
+                                <label class="col-md-4 col-form-label text-right pr-3">
+                                    Website:
+                                </label>
+                                <input type="text" class="form-control col-md-8" placeholder="romanpolanski.com"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="wordOnBorder bg-light">Company</div>
+                        <div class="border border-secondary border-3">
+                            <div class="row col-md-12 mt-1">
+                                <div class="form-group form-row row col-md-6">
+                                    <label class="col-md-4 col-form-label text-right pr-3">
+                                        Name:
+                                    </label>
+                                    <input type="text" class="form-control col-md-8" placeholder="Polanski TV" required>
+                                </div>
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="form-group form-row row col-md-12 ">
+                                    <label class="col-md-2 col-form-label text-right pr-3">
+                                        Catch phrase:
+                                    </label>
+                                    <input type="text" class="form-control col-md-10 lastLabel" placeholder="Catch me if you can ;)"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="form-group form-row row col-md-12">
+                                    <label class="col-md-2 col-form-label text-right pr-3">
+                                        BS (tags):
+                                    </label>
+                                    <input type="text" class="form-control col-md-10 lastLabel" placeholder="movie production directory film"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mt-3 text-danger">* Enter name</p>
+                            <p class="mt-3 text-danger">* Enter Valid ZIP code</p>
+                        </div>
+                        <div class="modal-form">
+                            <div class="container">
+                                <div class="row mb-4 mt-5">
+                                    <div class="col-md-6 col-sm-6 col1 center-block">
+                                        <button type="button" class="btnWidth btn btn-primary center-block ml-5 box-shadow--8dp">Add
+                                            Save User Details</button>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col1 center-block">
+                                        <button type="button" class="btnWidth btn btn-secondary center-block ml-5 box-shadow--8dp"
+                                            data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+</body>
+
+</html>

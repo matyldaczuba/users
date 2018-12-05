@@ -1,0 +1,35 @@
+tr:nth-child(odd) {
+    background-color: #ecf2f8;
+}
+
+.box {
+     margin: 0 auto;
+    width: 70%;
+}
+.box-shadow--8dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}
+.btnWidth {
+    width: 185px;
+}
+.form-group {
+    margin-bottom: 0.2rem;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.lastLabel {
+    margin-left: -0.3rem!important;
+}
+
+.wordOnBorder {
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.border-3 {
+    border-width:3px !important;
+}
